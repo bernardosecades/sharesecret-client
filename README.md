@@ -78,4 +78,4 @@ Now that we have assembled our Dockerfile, let’s build an image called react-n
 
 Now that our image is built, we can start a container with the following command, which will serve our app on port 3000.
 
-`docker run --rm -it -p 3001:80 react-nginx`
+`docker run --rm -it -p 3000:80 react-nginx`
