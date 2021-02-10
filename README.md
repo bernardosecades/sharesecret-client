@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Docker
+
+Now that we have assembled our Dockerfile, let’s build an image called react-nginx:
+
+`docker build -t react-nginx .`
+
+Now that our image is built, we can start a container with the following command, which will serve our app on port 3000.
+
+`docker run --rm -it -p 3001:80 react-nginx`
